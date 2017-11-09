@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../active-mq-test/active-mq-test.iml" filepath="$PROJECT_DIR$/../active-mq-test/active-mq-test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/arithmetic/arithmetic.iml" filepath="$PROJECT_DIR$/arithmetic/arithmetic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../dj-finance-server/dj-finance-server.iml" filepath="$PROJECT_DIR$/../dj-finance-server/dj-finance-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jvm-study/jvm-study.iml" filepath="$PROJECT_DIR$/jvm-study/jvm-study.iml" />
+      <module fileurl="file://$PROJECT_DIR$/active-mq-test/myactivemq.iml" filepath="$PROJECT_DIR$/active-mq-test/myactivemq.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rabbitmq/rabbitmq.iml" filepath="$PROJECT_DIR$/rabbitmq/rabbitmq.iml" />
+      <module fileurl="file://$PROJECT_DIR$/test/test.iml" filepath="$PROJECT_DIR$/test/test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zookeeper_book/zookeeper_book.iml" filepath="$PROJECT_DIR$/zookeeper_book/zookeeper_book.iml" />
+    </modules>
+  </component>
+</project>
