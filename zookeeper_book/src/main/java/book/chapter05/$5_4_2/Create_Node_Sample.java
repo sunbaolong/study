@@ -14,9 +14,10 @@ public class Create_Node_Sample {
             .build();
     public static void main(String[] args) throws Exception {
         client.start();
-        client.create()
+        String result = client.create()
               .creatingParentsIfNeeded()
               .withMode(CreateMode.EPHEMERAL)
               .forPath(path, "init".getBytes());
+        System.out.println(result);
     }
 }

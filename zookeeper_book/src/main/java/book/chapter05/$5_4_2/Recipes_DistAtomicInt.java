@@ -1,4 +1,5 @@
 package book.chapter05.$5_4_2;
+import com.alibaba.fastjson.JSON;
 import org.apache.curator.framework.CuratorFramework;
 import org.apache.curator.framework.CuratorFrameworkFactory;
 import org.apache.curator.framework.recipes.atomic.AtomicValue;
@@ -20,5 +21,6 @@ public class Recipes_DistAtomicInt {
 									new RetryNTimes( 3, 1000 ) );
 		AtomicValue<Integer> rc = atomicInteger.add( 8 );
 		System.out.println( "Result: " + rc.succeeded() );
+		System.out.println(rc.preValue() + "," + rc.postValue());
 	}
 }

@@ -20,5 +20,10 @@
             <artifactId>poi-ooxml</artifactId>
             <version>3.15</version>
         </dependency>
+        <dependency>
+            <groupId>org.apache.log4j</groupId>
+            <artifactId>com.springsource.org.apache.log4j</artifactId>
+            <version>1.2.16</version>
+        </dependency>
     </dependencies>
 </project>

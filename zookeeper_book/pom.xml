@@ -105,6 +105,11 @@
 				<artifactId>curator-test</artifactId>
 				<version>2.4.2</version>
 			</dependency>
+			<dependency>
+				<groupId>com.alibaba</groupId>
+				<artifactId>fastjson</artifactId>
+				<version>1.2.40</version>
+			</dependency>
 		</dependencies>
 	</dependencyManagement>
 
@@ -128,9 +133,13 @@
 			<artifactId>curator-recipes</artifactId>
 		</dependency>
 		<dependency>
-				<groupId>org.apache.curator</groupId>
-				<artifactId>curator-test</artifactId>
-			</dependency>
+			<groupId>org.apache.curator</groupId>
+			<artifactId>curator-test</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>fastjson</artifactId>
+		</dependency>
 	</dependencies>
 
 </project>

@@ -8,8 +8,7 @@ import org.apache.curator.retry.ExponentialBackoffRetry;
 public class Create_Session_Sample_fluent {
     public static void main(String[] args) throws Exception{
         RetryPolicy retryPolicy = new ExponentialBackoffRetry(1000, 3);
-        CuratorFramework client =
-        CuratorFrameworkFactory.builder()
+        CuratorFramework client = CuratorFrameworkFactory.builder()
                              .connectString("192.168.73.101:2181,192.168.73.102:2181,192.168.73.103:2181")
                              .sessionTimeoutMs(5000)
                              .retryPolicy(retryPolicy)
