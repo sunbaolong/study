@@ -26,6 +26,9 @@ public class ZooKeeper_GetChildren_API_Sync_Usage implements Watcher {
         connectedSemaphore.await();
         zk.create(path, "".getBytes(), 
         		  Ids.OPEN_ACL_UNSAFE, CreateMode.PERSISTENT);
+
+        zk.getChildren(path, true); // 目的是注册一个监听
+
         zk.create(path+"/c1", "".getBytes(), 
         		  Ids.OPEN_ACL_UNSAFE, CreateMode.EPHEMERAL);
         

@@ -27,15 +27,20 @@ public class ZooKeeper_GetChildren_API_ASync_Usage implements Watcher {
         connectedSemaphore.await();
         zk.create(path, "".getBytes(), 
         		  Ids.OPEN_ACL_UNSAFE, CreateMode.PERSISTENT);
+
+        zk.getChildren(path, true);
+
         zk.create(path+"/c1", "".getBytes(), 
         		  Ids.OPEN_ACL_UNSAFE, CreateMode.EPHEMERAL);
+
+        zk.setData(path+"/c1", "".getBytes(), -1);
         
         zk.getChildren(path, true, new IChildren2Callback(), null);
         
         zk.create(path+"/c2", "".getBytes(), 
       		  Ids.OPEN_ACL_UNSAFE, CreateMode.EPHEMERAL);
         
-        Thread.sleep( Integer.MAX_VALUE );
+        Thread.sleep( Integer.MAX_VALUE ); // 保持连接，临时子节点就会存在，停止后临时节点会消失
     }
     public void process(WatchedEvent event) {
       if (KeeperState.SyncConnected == event.getState()) {

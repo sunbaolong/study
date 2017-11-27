@@ -22,6 +22,8 @@ public class JuteSample {
 		BinaryInputArchive bbia = BinaryInputArchive.getArchive(bbis);
 		MockReqHeader header2 = new MockReqHeader();
 		header2.deserialize(bbia, "header");
+
+		System.out.println(header2.getSessionId() + "," + header2.getType());
 		bbis.close();
 		baos.close();
 	}
