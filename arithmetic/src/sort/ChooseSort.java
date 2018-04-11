@@ -27,7 +27,7 @@ public class ChooseSort extends Sort {
         show(a);
         StdOut.println(isSorted(a));
 
-        String[] s = {"z", "b", "c", "a", "a", "e", "g", "f"};
+        String[] s = {"z", "b", "c", "a", "a", "e", "g", "f", "i"};
         chooseSort.sort(s);
         show(s);
         StdOut.println(isSorted(s));
